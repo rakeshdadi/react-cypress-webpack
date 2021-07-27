@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "types": [
+      "node",
+      "cypress",
+      "@testing-library/cypress",
+      "cypress-axe"
+    ]
+  },
+  "include": [
+    "src"
+  ],
+  "typeRoots": [
+    "node_modules/@types"
+  ]
+}
