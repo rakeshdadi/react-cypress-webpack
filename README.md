@@ -1,4 +1,4 @@
-[React](https://reactjs.org/) ~ [Cypress](https://www.cypress.io/) ~ [Webpack](https://webpack.js.org/) ~ [TypeScript](https://www.typescriptlang.org/)
+[React](https://reactjs.org/) ~ [Cypress](https://www.cypress.io/) ~ [Webpack](https://webpack.js.org/) ~ [TypeScript](https://www.typescriptlang.org/) ~ [React Hook Forms](https://react-hook-form.com/)
 
 Getting Started
 ---------------
@@ -24,3 +24,7 @@ To run component tests
 
 To run integration tests
 `npm run test cypress`
+
+To Login 
+`user` : `test` 
+`password`: `a` (you can use anythig)
