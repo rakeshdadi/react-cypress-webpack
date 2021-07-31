@@ -26,5 +26,5 @@ To run integration tests
 `npm run test cypress`
 
 To Login 
-`user` : `test` 
-`password`: `a` (you can use anythig)
+* `userName` : `test` 
+* `password`: `a` (you can use anythig)
