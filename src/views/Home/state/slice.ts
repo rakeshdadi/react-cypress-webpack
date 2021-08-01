@@ -9,7 +9,7 @@ const slice = createSlice({
   initialState: initialState,
   reducers: {
     launchApiResponse(state, action: PayloadAction<any>) {
-      state.launches = action.payload
+      state.launches = action.payload.launches
     },
   }
 })

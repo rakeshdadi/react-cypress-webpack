@@ -8,9 +8,11 @@
     "cypress-ct": "cypress open-ct"
   },
   "dependencies": {
+    "@apollo/client": "^3.4.1",
     "@reduxjs/toolkit": "^1.6.1",
     "axe-core": "^4.3.1",
     "cypress-axe": "^0.12.2",
+    "graphql": "^15.5.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-hook-form": "^7.12.1",
