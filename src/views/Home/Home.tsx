@@ -11,7 +11,6 @@ import './home.css';
 
 export const _Home = ({ }) => {
   const homeState = useSelector((state: RootState) => state?.homeReducer);
-  // const [searchField, setSearchField] = useState<string>('');
   const dispatch = useDispatch();
   const history = useHistory();
   const { loading, data, error } = useQuery(GET_LAUNCHES);
@@ -22,22 +21,11 @@ export const _Home = ({ }) => {
     }
   }, [data, loading, dispatch])
 
-  // const handleChange = (event: any) => {
-  //   setSearchField(event.target.value);
-  //   console.log(searchField)
-  // };
-
   return (
     <main>
       <h1 data-testid="page-header">SpaceX Launches List</h1>
       {loading && <div data-testid="home-loading">Loading...</div>}
       {error && <div>Something went wrong</div>}
-      {/* <input
-        type="text"
-        placeholder="Search"
-        value={searchField}
-        onChange={handleChange}
-      /> */}
       {homeState.launches.map((launch: any, idx: number) => (
         <div className="home__card" data-testid="launch-card" key={idx} onClick={() => history.push(`/details/${launch.id}`)}>
           <p>Name : {launch.mission_name}</p>
